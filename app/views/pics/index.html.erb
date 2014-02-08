@@ -1,14 +1,17 @@
-<div class="steamy-hottub span6 offset1">
 
-	<h2>
-		<% @pics.each do |pic| %>
+<% @pics.each do |pic| %>
+	<div class="span6 text-left steamy-hottub">
+		
+		<h1 class="custom-font">
 			Hour: <%= pic.hour %>
-			<br />
+		<br />
+		<h2>
 			Emotion: <%= pic.emotion %>
 			<br/>
 			Learned: <%= pic.learned %>
-			<br/>
-		<% end %>
+		</h2>
+	</div>
+<% end %>
 
-	</h2>
-</div>
+
+
