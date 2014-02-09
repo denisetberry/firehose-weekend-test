@@ -1,11 +1,13 @@
 <div class="span6 offset3 text-center steamy-hottub">
-	<h1 class= "custom-font text-left" margin-left: 100px >
+	<h1 class= "custom-font text-left">
+
 		Add your pic of hottub coding
 	</h1>
 
 
 	<%= simple_form_for @pic do |f| %>
 		<%= f.input :hour, label: 'which hour was this?', placeholder: '1, 2, 3, etc.', :input_html => {:min => 1}%>
+		<%= f.input :image, label: "selfie" %>
 		<%= f.input :emotion, label: 'How did you feel?', placeholder:'Stoked, Excited, Confused' %>
 		<%= f.input :learned, label: 'What did you learn?', placeholder: 'HTML, CSS3, Rails, Ruby, Github' %>
 	<br />
